@@ -1,0 +1,11 @@
+Temp[k]
+for i=0 to k
+Temp[k]=0  // intializing to 0
+End for
+for i=0 to n
+Temp[arr[i]]=Temp[arr[i]]+1 // Instances of each number
+End for
+for i=1 to k
+Temp[i]=Temp[i]+Temp[i-1] // Adding
+End for
+answer=Temp[b]-Temp[a] // Range
